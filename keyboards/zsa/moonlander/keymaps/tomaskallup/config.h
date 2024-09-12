@@ -19,6 +19,4 @@
 #pragma once
 
 #define TAPPING_TERM 175
-#define MOUSEKEY_TIME_TO_MAX 30
 #define MOUSEKEY_MOVE_DELTA 6
-#define MOUSEKEY_MAX_SPEED 4
