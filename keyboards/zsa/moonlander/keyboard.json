@@ -41,8 +41,8 @@
     "mousekey": {
         "delay": 0,
         "interval": 20,
-        "max_speed": 7,
-        "time_to_max": 60,
+        "max_speed": 4,
+        "time_to_max": 30,
         "wheel_delay": 400
     },
     "rgb_matrix": {
