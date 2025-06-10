@@ -18,12 +18,12 @@ tap_dance_action_t tap_dance_actions[] = {
 
 // Combos
 const uint16_t PROGMEM custom_esc[] = {KC_J, KC_K, COMBO_END};
-const uint16_t PROGMEM qmk_boot[] = {KC_R, KC_TAB, COMBO_END};
+// const uint16_t PROGMEM qmk_boot[] = {KC_R, KC_TAB, COMBO_END};
 const uint16_t PROGMEM arr_panic[] = {KC_UP, KC_DOWN, COMBO_END};
 const uint16_t PROGMEM sym_panic[] = {KC_SCLN, KC_CIRC, COMBO_END};
 combo_t                key_combos[] = {
     COMBO(custom_esc, KC_ESC),
-    COMBO(qmk_boot, QK_BOOT),
+    // COMBO(qmk_boot, QK_BOOT),
     COMBO(arr_panic, TO(BASE)),
 };
 
@@ -113,7 +113,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             }
         case PR_SC:
             if (record->event.pressed) {
-                SEND_STRING(SS_RGUI(SS_TAP(X_PSCR)));
+                SEND_STRING(SS_RGUI(SS_LSFT(SS_TAP(X_PSCR))));
                 return false;
             }
         case BSP_DEL: {
